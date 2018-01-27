@@ -41,7 +41,7 @@ function displayWeather(object) {
   pressure.innerHTML = 'Pressure: ' + object.currently.pressure + 'mb';
   temperature.innerHTML = 'Temperature: ' + farenheitToCelsium(object.currently.temperature) + 'C' + '/' + object.current.temperature;
   windSpeed.innerHTML = 'Wind Speed: ' + knotsToKilometers(object.currently.windspeed) + 'km/h';
-  weatherSummery.innerHTML = '' + object.timezone;
+  weatherSummery.innerHTML = '' + object.timezone + ' </br> </br> WeatherSummary:' + object.currently.summary;
   document.getElementById('weather-summary').style.backgroundColor = darkblue;
 }
 
